@@ -8,4 +8,8 @@ import { Twimp } from '../twimp.model'
 })
 export class TwimpCardComponent {
   @Input() twimp: Twimp;
+
+  estrellar():void {
+    this.twimp.favorite = !this.twimp.favorite;
+  }
 }
